@@ -1,0 +1,117 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: '',  sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+img{
+    width: 20%;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+p{
+    line-height: 1.5;
+    width: 90%;
+}
+
+a{
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.container{
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.card{
+    min-width: auto;
+    width: 350px;
+    max-width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem 2rem;
+}
+
+.sedans{
+    border-radius: 1rem 1rem 0 0;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedans > a{
+    color: hsl(31, 77%, 52%);
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv > a{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    border-radius: 0 0 1rem 1rem;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury > a{
+    color: hsl(179, 100%, 13%);
+}
+
+a:hover{
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+@media (min-width: 900px) {
+
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        width: 65%;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .card{
+        gap: 2rem;
+    }
+
+    a{
+        width: 60%;
+        margin-top: 1.5rem;
+    }
+
+    .sedans{
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .luxury{
+        border-radius: 0 1rem 1rem 0;
+    }
+}
